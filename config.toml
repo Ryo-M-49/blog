@@ -1,4 +1,4 @@
-baseURL = 'https://ryo-m-49.github.io/blog/'
+baseURL = 'https://www.ryo-m.net/'
 languageCode = 'ja-jp'
 title = 'RyoM.net'
 theme = "papermod"
