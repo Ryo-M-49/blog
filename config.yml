@@ -1,0 +1,22 @@
+baseURL: "https://www.ryo-m.net/"
+languageCode: ja-jp
+title: RyoM.net
+theme: papermod
+menu:
+  main:
+    - identifier: resume
+      name: Resume
+      url: /resume/
+      weight: 10
+
+params:
+  homeInfoParams:
+    Title: Ryo
+    Content: A wannabe real software engineer
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/Ryo_Code"
+    - name: github
+      url: "https://github.com/Ryo-M-49"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/rmikami/"
