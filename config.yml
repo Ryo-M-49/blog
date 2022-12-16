@@ -20,3 +20,9 @@ params:
       url: "https://github.com/Ryo-M-49"
     - name: linkedin
       url: "https://www.linkedin.com/in/rmikami/"
+  description: Text about my cool site
+  images:
+  - profile.png
+  title: My cool site
+taxonomies:
+  series: series
