@@ -3,7 +3,7 @@ date: "2022-12-16"
 description: 元々 Contentful というヘッドレス CMS でコンテンツを管理して、フロントだけ Next.JS で SSG で実装していぇーいってやってたけど、記事書くたびにビルドしなおすのめんどくさいし、ISR
 とかいうの使えばいちいちビルドしなおさなくてよくなるみたいだけど実装めんどくさかったしでそのまま全く更新しなくなってしまった。
 images:
-- profile.png
+- blogimagetools.png
 series: []
 tags: []
 title: ブログ作り直した

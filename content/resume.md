@@ -20,7 +20,7 @@ ShowToc: true
 ### 利用技術
 
 - フロントエンド
-  - Vue, Nuxt.JS
+  - Vue, Nuxt.js, TypeScript
 - バックエンド
   - Go, PHP, Laravel,
 - インフラ
