@@ -6,6 +6,9 @@ description: ヘッドレスCMSからHugoへ移行した話
 categories: [" "]
 tags: ["blog"]
 author: "RyoM"
+image: 
+    cover:
+        image: /images/og/first-post.png
 ---
 
 # 前作ったブログ
