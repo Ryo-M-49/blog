@@ -21,8 +21,8 @@ params:
     - name: linkedin
       url: "https://www.linkedin.com/in/rmikami/"
   description: A wanna be real software engineer.
-  images:
-  - profile.png
+  # images:
+  # - profile.png
   title: RyoM.net
 taxonomies:
   series: series
