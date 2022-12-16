@@ -2,9 +2,12 @@
 title: "ブログ作り直した"
 date: 2022-12-16T01:01:56+09:00
 draft: false
-description: 
-images:
-- blogimagetools.png
+description: ヘッドレスCMSからHugoへ移行した話
+categories: [" "]
+tags: ["blog"]
+author: "RyoM"
+eyecatch: "/images/og/first-post.png"
+ogimage: "/images/og/first-post.png"
 ---
 
 # 前作ったブログ
