@@ -2,6 +2,9 @@
 title: "ブログ作り直した"
 date: 2022-12-16T01:01:56+09:00
 draft: false
+description: 
+images:
+- blogimagetools.png
 ---
 
 # 前作ったブログ
