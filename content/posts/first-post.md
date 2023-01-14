@@ -7,7 +7,7 @@ categories: [" "]
 tags: ["blog"]
 author: "RyoM"
 images:
-- /images/og/first-post.png
+- /blog/images/og/first-post.png
 ---
 
 # 前作ったブログ

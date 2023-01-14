@@ -7,7 +7,7 @@ categories: [" "]
 tags: ["blog"]
 author: "RyoM"
 images:
-- /images/og/2023-objective.png
+- /blog/images/og/2023-objective.png
 ---
 
 # 今年の抱負

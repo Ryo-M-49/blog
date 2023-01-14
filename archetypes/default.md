@@ -7,6 +7,6 @@ categories: [" "]
 tags: ["blog"]
 author: "RyoM"
 images:
-- /images/og/{{.Name}}.png
+- /blog/images/og/{{.Name}}.png
 ---
 
