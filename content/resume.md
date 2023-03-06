@@ -24,7 +24,7 @@ ShowToc: true
 - バックエンド
   - Go, PHP, Laravel,
 - インフラ
-  - ECS, EC2, S3, CloudFront
+  - ECS, Fargate, EC2, S3, CloudFront
 - その他ツール
   - Github, CircleCI, NewRelic, Redash, CloudWatch, BigQuery, Jira, Confluence, Slack
 
