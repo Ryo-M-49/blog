@@ -14,15 +14,13 @@ params:
     Title: Ryo
     Content: A wannabe real software engineer
   socialIcons:
-    - name: twitter
-      url: "https://twitter.com/Ryo_Code"
     - name: github
       url: "https://github.com/Ryo-M-49"
     - name: linkedin
       url: "https://www.linkedin.com/in/rmikami/"
   description: A wanna be real software engineer.
   images:
-  - profile.png
+    - profile.png
   title: RyoM.net
 taxonomies:
   series: series
