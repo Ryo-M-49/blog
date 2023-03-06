@@ -1,0 +1,183 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<meta property="og:title" content="2023/01のストックした記事">
+<meta property="og:description" content="業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550
+Go 1.20 vet のアップデート 
+どのように 1Password へのログイン方法を管理しているか
+【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)
+【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）
+Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita
+CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck
+[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO
+本当に SSR する必要があるのか考えてみた話 - Qiita
+Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ryo-m-49.github.io/blog/posts/stock-of-feb-2023/"><meta property="og:image" content="https://ryo-m-49.github.io/blog/images/og/stock-of-feb-2023.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-03-01T22:10:21+09:00">
+<meta property="article:modified_time" content="2023-03-01T22:10:21+09:00"><meta property="og:site_name" content="RyoM.net">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://ryo-m-49.github.io/blog/images/og/stock-of-feb-2023.png">
+<meta name=twitter:url content="https://ryo-m-49.github.io/blog/">
+<meta name=twitter:title content="2023/01のストックした記事">
+<meta name=twitter:description content="業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550
+Go 1.20 vet のアップデート 
+どのように 1Password へのログイン方法を管理しているか
+【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)
+【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）
+Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita
+CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck
+[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO
+本当に SSR する必要があるのか考えてみた話 - Qiita
+Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium">
+<title>2023/01のストックした記事 | RyoM.net</title>
+<meta name=keywords content="blog">
+<meta name=description content="業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550
+Go 1.20 vet のアップデート 
+どのように 1Password へのログイン方法を管理しているか
+【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)
+【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）
+Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita
+CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck
+[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO
+本当に SSR する必要があるのか考えてみた話 - Qiita
+Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium">
+<meta name=author content="RyoM">
+<link rel=canonical href=https://ryo-m-49.github.io/blog/posts/stock-of-feb-2023/>
+<link crossorigin=anonymous href=/blog/assets/css/stylesheet.bccfefac377bc340f06c260aed1bddf49a4354816d7c570d6aac75a997986c95.css integrity="sha256-vM/vrDd7w0DwbCYK7Rvd9JpDVIFtfFcNaqx1qZeYbJU=" rel="preload stylesheet" as=style>
+<script defer crossorigin=anonymous src=/blog/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG+9vmJ0cTS+ovo0FeA=" onload=hljs.initHighlightingOnLoad()></script>
+<link rel=icon href=https://ryo-m-49.github.io/blog/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://ryo-m-49.github.io/blog/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://ryo-m-49.github.io/blog/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://ryo-m-49.github.io/blog/apple-touch-icon.png>
+<link rel=mask-icon href=https://ryo-m-49.github.io/blog/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="2023/01のストックした記事">
+<meta property="og:description" content="業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550
+Go 1.20 vet のアップデート 
+どのように 1Password へのログイン方法を管理しているか
+【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)
+【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）
+Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita
+CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck
+[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO
+本当に SSR する必要があるのか考えてみた話 - Qiita
+Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://ryo-m-49.github.io/blog/posts/stock-of-feb-2023/"><meta property="og:image" content="https://ryo-m-49.github.io/blog/images/og/stock-of-feb-2023.png"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2023-03-01T22:10:21+09:00">
+<meta property="article:modified_time" content="2023-03-01T22:10:21+09:00"><meta property="og:site_name" content="RyoM.net">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://ryo-m-49.github.io/blog/images/og/stock-of-feb-2023.png">
+<meta name=twitter:url content="https://ryo-m-49.github.io/blog/">
+<meta name=twitter:title content="2023/01のストックした記事">
+<meta name=twitter:description content="業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550
+Go 1.20 vet のアップデート 
+どのように 1Password へのログイン方法を管理しているか
+【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)
+【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）
+Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita
+CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck
+[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO
+本当に SSR する必要があるのか考えてみた話 - Qiita
+Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://ryo-m-49.github.io/blog/posts/"},{"@type":"ListItem","position":2,"name":"2023/01のストックした記事","item":"https://ryo-m-49.github.io/blog/posts/stock-of-feb-2023/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"2023/01のストックした記事","name":"2023\/01のストックした記事","description":"業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550\nGo 1.20 vet のアップデート \nどのように 1Password へのログイン方法を管理しているか\n【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)\n【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）\nGo におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita\nCTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck\n[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO\n本当に SSR する必要があるのか考えてみた話 - Qiita\nUh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium","keywords":["blog"],"articleBody":"業務で扱ったキーワード  ログ設計 Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた TypeScript 5.0 AWS Parameter Store  プライベートで扱ったキーワード  Next.js ChatGPT プロダクト開発論 パスワード管理  一覧 https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550\nGo 1.20 vet のアップデート \nどのように 1Password へのログイン方法を管理しているか\n【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)\n【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）\nGo におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita\nCTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck\n[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO\n本当に SSR する必要があるのか考えてみた話 - Qiita\nUh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium\nSome tricks and tips for using for range in GoLang | Pixelstech.net\nAllocation efficiency in high-performance Go services | Twilio Segment Blog\nGo のポインタ渡しは値渡しよりパフォーマンスが良いという誤解 - Qiita\nReact(SPA)アプリを Firebase Hosting にデプロイ\nNext.js の静的サイト生成(SSG)について確認 - わくわく Bank\n出来る 100%TypeScript 作って学ぶ Next.js + GraphQL + Prisma(上) - GCP 編\nGoogle vs ChatGPT で世界がヤバいかもしれない理由 https://www.gizmodo.jp/2023/02/google-vs-chatgpt-and-microsoft-bing.html\nついに来る! TypeScript 5.0 の新機能を全紹介 @uhyo - TechFeed\nGo at Google: Language Design in the Service of Software Engineering - The Go Programming Language\n経験から思うログの設計・実装ポリシー │NDW\nWhat’s new in Go 1.20? - Speaker Deck\nChatGPT で騒いでる場合じゃない。 AI 研究者が｢FlexGen｣をゲームチェンジャーと呼ぶ理由 | Business Insider Japan\nチャット GPT に驚いたのなら Facebook の AI に腰を抜かすよ https://www.newsweekjapan.jp/yukawa/2023/02/chatgptfacebookai.php\n大学中退 → ネトゲ廃人 →6 年のニート生活を経験　プレイ時間は 9000 時間超え、『FF14』大好き CTO のキャリア - ログミー Tech\nプロダクト開発はユーザーを絞って考える｜ PM Club\n","wordCount":"191","inLanguage":"en","datePublished":"2023-03-01T22:10:21+09:00","dateModified":"2023-03-01T22:10:21+09:00","author":{"@type":"Person","name":"RyoM"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ryo-m-49.github.io/blog/posts/stock-of-feb-2023/"},"publisher":{"@type":"Organization","name":"RyoM.net","logo":{"@type":"ImageObject","url":"https://ryo-m-49.github.io/blog/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://ryo-m-49.github.io/blog/ accesskey=h title="RyoM.net (Alt + H)">RyoM.net</a>
+<div class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</div>
+</div>
+<ul id=menu>
+<li>
+<a href=https://ryo-m-49.github.io/blog/resume/ title=Resume>
+<span>Resume</span>
+</a>
+</li>
+</ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+2023/01のストックした記事
+</h1>
+<div class=post-meta><span title="2023-03-01 22:10:21 +0900 +0900">March 1, 2023</span>&nbsp;·&nbsp;RyoM
+</div>
+</header>
+<div class=post-content><h1 id=業務で扱ったキーワード>業務で扱ったキーワード<a hidden class=anchor aria-hidden=true href=#業務で扱ったキーワード>#</a></h1>
+<ul>
+<li>ログ設計</li>
+<li>Go(1.20, Slice, Value/Pointer) 社内勉強会主催したので調べた</li>
+<li>TypeScript 5.0</li>
+<li>AWS Parameter Store</li>
+</ul>
+<h1 id=プライベートで扱ったキーワード>プライベートで扱ったキーワード<a hidden class=anchor aria-hidden=true href=#プライベートで扱ったキーワード>#</a></h1>
+<ul>
+<li>Next.js</li>
+<li>ChatGPT</li>
+<li>プロダクト開発論</li>
+<li>パスワード管理</li>
+</ul>
+<h1 id=一覧>一覧<a hidden class=anchor aria-hidden=true href=#一覧>#</a></h1>
+<p><a href=https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550>https://pattern-windscreen-cc2.notion.site/2023-02-a8b1246bebee4262bb368de27e0a5550</a></p>
+<p><a href=https://future-architect.github.io/articles/20230202a/>Go 1.20 vet のアップデート </a></p>
+<p><a href=https://www.notion.so/1Password-84c407d1f4754b73886f90eed3d5b822>どのように 1Password へのログイン方法を管理しているか</a></p>
+<p><a href=https://www.notion.so/1-GeeklyMedia-566f5ff8030c48cc86e39c6ca0cb12f5>【第 1 回・前編】 エンジニア和田卓人の今を形作る技術 | GeeklyMedia(ギークリーメディア)</a></p>
+<p><a href=https://www.notion.so/Go-go-mod-replace-IT-882403b32faa4591b930aa786616867c>【Go】go.mod の replace でローカルのモジュールを参照する : ビジネスと IT 活用に役立つ情報（株式会社アーティス）</a></p>
+<p><a href=https://www.notion.so/Go-Qiita-445de064e14c4b55bb1dfbeca36b45a9>Go におけるパッケージのインポート方法いろいろ～ローカル環境のパッケージをインポートしたい～ - Qiita</a></p>
+<p><a href=https://www.notion.so/CTO-Speaker-Deck-c1ddf72d075b49cb97cebf297e9a20c9>CTO から見た，なぜスタートアップ初期のソフトウェア設計は壊れがちなのか - Speaker Deck</a></p>
+<p><a href=https://www.notion.so/AWS-Lambda-Parameter-Store-DevelopersIO-5c7585a25a8e41cba2beecb5525ebfb1>[AWS Lambda] Parameter Store から取得したパラメータをグローバル変数でキャッシュする | DevelopersIO</a></p>
+<p><a href=https://www.notion.so/SSR-Qiita-59c5f5e66dbd44829549f63191b2a395>本当に SSR する必要があるのか考えてみた話 - Qiita</a></p>
+<p><a href=https://www.notion.so/Uh-Oh-s-in-Go-Slice-of-Pointers-by-Nitish-Malhotra-Codezillas-Medium-05f9a6f43d924b7e810ae8bb7c63b0d1>Uh-Oh’s in Go — Slice of Pointers | by Nitish Malhotra | Codezillas | Medium</a></p>
+<p><a href=https://www.notion.so/Some-tricks-and-tips-for-using-for-range-in-GoLang-Pixelstech-net-ca4d447ee34f4fb3b78be5d6f25d190a>Some tricks and tips for using for range in GoLang | Pixelstech.net</a></p>
+<p><a href=https://www.notion.so/Allocation-efficiency-in-high-performance-Go-services-Twilio-Segment-Blog-939998cd0fde4bbc875d1a3c316196b5>Allocation efficiency in high-performance Go services | Twilio Segment Blog</a></p>
+<p><a href=https://www.notion.so/Go-Qiita-abc3b541b0f1430e830612d7df0fa4d3>Go のポインタ渡しは値渡しよりパフォーマンスが良いという誤解 - Qiita</a></p>
+<p><a href=https://www.notion.so/React-SPA-Firebase-Hosting-80caee1eb3fb4d508659a9455e3ba54b>React(SPA)アプリを Firebase Hosting にデプロイ</a></p>
+<p><a href=https://www.notion.so/Next-js-SSG-Bank-294c15d0260a41bc84b12310335b51d1>Next.js の静的サイト生成(SSG)について確認 - わくわく Bank</a></p>
+<p><a href=https://www.notion.so/100-TypeScript-Next-js-GraphQL-Prisma-GCP-352f4b4e49c9430eb40f68cce2a0efc3>出来る 100%TypeScript 作って学ぶ Next.js + GraphQL + Prisma(上) - GCP 編</a></p>
+<p><a href=https://www.notion.so/Google-vs-ChatGPT-https-www-gizmodo-jp-2023-02-google-vs-chatgpt-and-microsoft-bing-6cadba5facad4e4f98f6c9932e2652e6>Google vs ChatGPT で世界がヤバいかもしれない理由 https://www.gizmodo.jp/2023/02/google-vs-chatgpt-and-microsoft-bing.html</a></p>
+<p><a href=https://www.notion.so/TypeScript-5-0-uhyo-TechFeed-9c3acd7149be4823941b93f8c1b1b2d0>ついに来る! TypeScript 5.0 の新機能を全紹介 @uhyo - TechFeed</a></p>
+<p><a href=https://www.notion.so/Go-at-Google-Language-Design-in-the-Service-of-Software-Engineering-The-Go-Programming-Language-0b2d0c0d7fb84b4cbf4ca47fd2447711>Go at Google: Language Design in the Service of Software Engineering - The Go Programming Language</a></p>
+<p><a href=https://www.notion.so/NDW-7dbc3f392a874ad2bbff48678d193b24>経験から思うログの設計・実装ポリシー │NDW</a></p>
+<p><a href=https://www.notion.so/What-s-new-in-Go-1-20-Speaker-Deck-2ad246bf20d442a282829f58e7caa4c4>What&rsquo;s new in Go 1.20? - Speaker Deck</a></p>
+<p><a href=https://www.notion.so/ChatGPT-AI-FlexGen-Business-Insider-Japan-12105108aac44fc7abee75932405b6f6>ChatGPT で騒いでる場合じゃない。 AI 研究者が｢FlexGen｣をゲームチェンジャーと呼ぶ理由 | Business Insider Japan</a></p>
+<p><a href=https://www.notion.so/GPT-Facebook-AI-https-www-newsweekjapan-jp-yukawa-2023-02-chatgptfacebookai-php-8f8e1197aa2e49ff9115a997e97d0b2e>チャット GPT に驚いたのなら Facebook の AI に腰を抜かすよ https://www.newsweekjapan.jp/yukawa/2023/02/chatgptfacebookai.php</a></p>
+<p><a href=https://www.notion.so/6-9000-FF14-CTO-Tech-7787f84bef0b46a4b8a6c389a24f8b3f>大学中退 → ネトゲ廃人 →6 年のニート生活を経験　プレイ時間は 9000 時間超え、『FF14』大好き CTO のキャリア - ログミー Tech</a></p>
+<p><a href=https://www.notion.so/PM-Club-60f7ea55b19241159eb883c14cf55e70>プロダクト開発はユーザーを絞って考える｜ PM Club</a></p>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+</ul>
+</footer>
+</article>
+</main>
+<footer class=footer>
+<span>&copy; 2023 <a href=https://ryo-m-49.github.io/blog/>RyoM.net</a></span>
+<span>
+Powered by
+<a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a> &
+        <a href=https://github.com/adityatelange/hugo-PaperMod/ rel=noopener target=_blank>PaperMod</a>
+</span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</a>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>
